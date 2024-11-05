@@ -42,7 +42,10 @@ public class OrangeHRMTest extends BaseClass {
 	  ExtentManager.test.createNode("Validation3");
 	  Assert.assertTrue(true);
 	  ExtentManager.test.createNode("Validation4--changes--");
-	  Assert.assertTrue(true); }
+	  Assert.assertTrue(true); 
+	  Assert.fail("delibrate fail this test");
+	  }
+	 
 	 
 	 
 }

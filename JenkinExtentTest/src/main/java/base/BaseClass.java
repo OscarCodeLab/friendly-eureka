@@ -70,9 +70,10 @@ public class BaseClass {
 		}
 		return destination;
 		// This new path for jenkins
+		
 		/*
 		 * String newImageString =
-		 * "http://localhost:8080/job/JenkinExtentTest/ws/JenkinExtentTest/ScreenShot/"
+		 * "http://localhost:8080/view/Rough%20Work/job/free_jenkinExtentreportAndEmailwithAttachJobRun/ws/JenkinExtentTest/ScreenShot/"
 		 * + filename + "_" + dateName + ".png"; return newImageString;
 		 */
 
