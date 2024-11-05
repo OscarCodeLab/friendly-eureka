@@ -38,11 +38,11 @@ public class BaseClass {
 	@BeforeMethod
 	public void setup() {
 		// WebDriverManager.chromedriver().setup();
-		
-		  ChromeOptions chromeOptions= new ChromeOptions();
-		  chromeOptions.addArguments("headless");
-		  chromeOptions.addArguments("window-size=1980,1080");
-		 
+
+		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.addArguments("headless");
+		chromeOptions.addArguments("window-size=1980,1080");
+
 		driver = new ChromeDriver(chromeOptions);
 		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
@@ -68,14 +68,12 @@ public class BaseClass {
 		} catch (Exception e) {
 			e.getMessage();
 		}
-		return destination;
+		// return destination;
 		// This new path for jenkins
-		
-		/*
-		 * String newImageString =
-		 * "http://localhost:8080/view/Rough%20Work/job/free_jenkinExtentreportAndEmailwithAttachJobRun/ws/JenkinExtentTest/ScreenShot/"
-		 * + filename + "_" + dateName + ".png"; return newImageString;
-		 */
+
+		String newImageString = "http://localhost:8080/view/Rough%20Work/job/free_jenkinExtentreportAndEmailwithAttachJobRun/ws/JenkinExtentTest/ScreenShot/"
+				+ filename + "_" + dateName + ".png";
+		return newImageString;
 
 	}
 
